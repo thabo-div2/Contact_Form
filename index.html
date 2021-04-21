@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thabo's Contact Form</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./glass.css" />
+  </head>
+  <body>
+    <form id="form" action="https://formspree.io/f/mvodgvzy" method="POST">
+      <h1 class="heading">Contact Form</h1>
+      <!--Name-->
+      <div class="form-group">
+        <label class="label-input" for="name">Your name: </label>
+        <input
+          class="form-input"
+          type="text"
+          id="name"
+          name="name"
+          required
+          placeholder="Full Name"
+        />
+      </div>
+      <!--Email-->
+      <div class="form-group">
+        <label class="label-input" for="email"> Your email: </label>
+        <input
+          class="form-input"
+          type="email"
+          name="_replyto"
+          id="email"
+          placeholder="example@email.com"
+          required
+        />
+      </div>
+      <!--Contact Details-->
+      <div class="form-group">
+        <label class="label-input" for="number">Your cell number: </label
+        ><input
+          class="form-input"
+          type="tel"
+          id="number"
+          name="number"
+          placeholder="123 456 7890"
+          required
+        />
+      </div>
+      <!--Message-->
+      <div class="form-group">
+        <label class="label-input" for="message"> Your message: </label>
+        <textarea
+          class="form-input"
+          id="message"
+          name="message"
+          placeholder="Enter your message here"
+        ></textarea>
+      </div>
+      <!--Button-->
+      <div class="form-group">
+        <button class="button" type="submit">Send</button>
+      </div>
+    </form>
+  </body>
+</html>
